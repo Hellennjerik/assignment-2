@@ -1,5 +1,11 @@
 body{
-    background-image: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(124, 194, 193);
+    
+
 }
 
 
