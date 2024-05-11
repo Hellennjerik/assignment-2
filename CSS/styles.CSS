@@ -3,6 +3,17 @@ body{
     padding: 0%;
     font-size: medium;
     background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Footer {
+    text-align: center;
+    padding: 20px 1;
+
+
+}
+.about-section {
+    background-color: rgb(227, 127, 255);
+    padding: 50px 0;
 }
 
 
