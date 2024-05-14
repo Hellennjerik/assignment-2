@@ -9,13 +9,21 @@
 <body>
 
        <!--Navigation bar-->
-       <a href="./index.html">Home</a>
+       <div class="topnav">
+        <a href="./index.html">Home</a>
           <a href="./about.html">About us</a>
           <a href="./destination.html">Destination</a>
           <a href="./company members.html">Company Members</a>
           <a href="./contact.html">Our Contacts</a>
-          <a href="./Registration.html">Registration</a>
-          <a href="./Login.html">login</a>
+        
+
+          <div class="topnav-right">
+            <a href="Registration.html">Registration</a>
+            <a href="Login.html">login</a>
+        </div>
+        </div>
+    
+         
        
        
     
@@ -80,10 +88,39 @@
 
       <!--Footer section-->
       <div class="Footer">
-        <div class="container">
-            <p>&copy; 2024 Mahaba Travels . All rights reserved</p>
-
+            &copy; 2024 Mahaba Travels . All rights reserved
         </div>
 
+<style>
+    .topnav{
+    background-color: #373737;
+    overflow: hidden;
+}
+.topnav a{
+    color: azure;
+    text-decoration: none;
+    float: left;
+    display: block;
+    text-align: left;
+    padding-right: 15px 16px;
+}
+.topnav a:hover{
+    text-decoration: none;
+    color:azure;
+    background-color: blue;
+}
+.topnav-right{
+    float: right;
+  
+}
+
+.Footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    
+}
+
+</style>
 </body>
 </html>

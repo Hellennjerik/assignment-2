@@ -3,7 +3,31 @@ body{
     padding: 0%;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: beige;
+    background-color: white;
+}
+.topnav{
+    background-color: #373737;
+    overflow: hidden;
+    padding: 15px 16px;
+}
+.topnav a{
+    color: azure;
+    text-decoration: none;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 15px 16px;
+}
+.topnav a:hover{
+    text-decoration: none;
+    color:azure;
+    background-color: blue;
+}
+.topnav-right{
+    float: right;
+  
+    
+    
 }
 table{
     border: solid 1px #373737;
@@ -23,7 +47,7 @@ th{
     text-align: left;
 }
 tr:hover{
-    background-color: rgb(241, 184, 139);
+    background-color: white;
 }
 h2{
     text-align: center;
@@ -33,4 +57,9 @@ h2{
     text-decoration: underline;
     font-size: larger;
     text-transform: uppercase;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 0.6em;
 }
