@@ -58,11 +58,11 @@ nav{
     margin: 50px 0 20px;
     font-size: 5vw;
     font-weight: 500;
-    color: #333;
+    color:#333;
 }
 .PopularDestinations{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-gap:30px ;
 }
 .PopularDestinations div img{
