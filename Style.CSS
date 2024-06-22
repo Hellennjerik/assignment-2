@@ -72,22 +72,8 @@ nav{
 }
 .column{
     float: left;
-    width: 25%;
+    width: 50%;
     padding: 0 10px;
-}
-.row{
-    margin: 0 -5px;
-}
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 16px;
-    text-align: center;
-    
 }
 
 
