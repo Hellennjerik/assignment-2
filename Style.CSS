@@ -114,6 +114,8 @@ label {
     width: 95%;
     display: inline-block;
   }
-  
+  textarea{
+    height: 250px;
+  }
 
 
