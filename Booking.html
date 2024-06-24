@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <link rel="stylesheet"href="Style.CSS">
+</head>
+<body>
+    <form>
+        <div class="elem-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Travelers-Name" placeholder="Name">
+        </div>
+
+        <div class="elem-group">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="Travelers-email" placeholder="username@gmail.com" required>
+        </div>
+
+        <div class="elem-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Travelers-phone" placeholder="0723456789" required>
+        </div>
+
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="adults" placeholder="3" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="children" placeholder="4" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+    </div>
+
+    <div class="elem-group">
+        <label for="destination">Destination</label>
+        <select id="destination-selection" name="destination" required>
+            <option value="">Choose a destination</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Dubai">Morocco</option>
+            <option value="Dubai">Greece</option>
+            <option value="Dubai">Maasai Mara</option>
+            <option value="Dubai">India</option>
+        </select>
+    </div>
+
+    <div class="elem-group">
+        <label for="Mode of transport">Mode of transport</label>
+        <select id="Mode of transport-selection" name="Mode of transport" required>
+            <option value="">Choose mode of transport</option>
+            <option value="Dubai">Safari Car</option>
+            <option value="Dubai">Self drive</option>
+            <option value="Dubai">Bus</option>
+            <option value="Dubai">Airplane</option>
+        </select>
+    </div>
+       <hr>
+       <div class="elem-group">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="Travelers_message" placeholder="Tell us anything else that might be important." required></textarea>
+      </div>
+      <button type="submit">Book now </button>
+    </form>
+</body>
+</html>
