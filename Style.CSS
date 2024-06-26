@@ -215,6 +215,10 @@ label {
 }
 .Travelers feedback p{
     font-size: 0.9rem;
-    color: #4b4b4b;
-    
+    color: #4b4b4b; 
+}
+.Feedback-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+
 }
