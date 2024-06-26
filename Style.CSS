@@ -222,3 +222,6 @@ label {
     transition: all ease 0.3s;
 
 }
+.Feedback-heading{
+    font-size: 1.2rem;
+}
