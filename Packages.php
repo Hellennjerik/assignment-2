@@ -22,16 +22,16 @@
             <!--wrapper for slides-->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="Images/pexels-mohamedelaminemsiouri-2245436.jpg" alt="Destination Areas">
+                    <img src="Images/carousel 1.jpg" alt="Destination Areas">
                 </div>
                 <div class="item">
-                    <img src="Images/pexels-pixabay-34098.jpg" alt="Destination Areas">
+                    <img src="Images/carousel 2.jpg" alt="Destination Areas">
                 </div>
                 <div class="item">
-                    <img src="Images/pexels-tirachard-kumtanom-112571-347145.jpg" alt="Destination Areas">
+                    <img src="Images/carousel 3.jpg" alt="Destination Areas">
                 </div>
                 <div class="item">
-                    <img src="Images/pexels-vince-2265876.jpg" alt="Destination Areas">
+                    <img src="Images/carousel 4.jpg" alt="Destination Areas">
                 </div>
             </div>
 
@@ -49,15 +49,7 @@
         <p>We offer packages for our travel destinations.</p>
         <p>We also ensure you have a nice and comfortable stay at the destinations of choice. We also cover the travel expenses that include buses, cars, safari vans, flights that come at an extra price.</p>
 
-        <!--The type of trips offered-->
-        <p>We offer:</p>
-        <ol style="list-style-type: lower-latin;">
-            <li>International Trips</li>
-            <li>Local Trips</li>
-            <li>Business Trips</li>
-            <li>School Trips</li>
-            <li>Leisure Trips</li>
-        </ol>
+       
         <!--A list of the packages offered-->
         <h2>An example of the packages include:</h2>
 
@@ -94,11 +86,12 @@
             </tr>
         </table>
 
+        <br>
         <p>Experience the world with Mahaba Travels</p>
     </div>
 
     
-    <?php include_once("Templates/footer.php");?>
+    
     <!--Footer section-->
     <div class="footer">
         <div class="container">
