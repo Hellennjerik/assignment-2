@@ -7,6 +7,7 @@
     <link rel="stylesheet"href="Style.CSS">
 </head>
 <body>
+<?php include_once("Templates/nav.php");?>
 
     <div class="about-msg">
         <h1>About Us</h1>
