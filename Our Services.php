@@ -8,8 +8,22 @@
 </head>
 <body>
 <?php include_once("Templates/nav.php");?>
-   
-<?php include_once("Templates/footer.php");?>
+
+   <div class="row">
+    <div class="column">
+        <div class="card">...</div>
+    </div>
+    <div class="column">
+        <div class="card">...</div>
+    </div>
+    <div class="column">
+        <div class="card">...</div>
+    </div>
+    <div class="column">
+        <div class="card">...</div>
+    </div>
+   </div>
+
 
      
 
