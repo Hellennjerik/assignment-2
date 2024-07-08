@@ -49,10 +49,10 @@
         <select id="destination-selection" name="destination" required>
             <option value="">Choose a destination</option>
             <option value="Dubai">Dubai</option>
-            <option value="Dubai">Morocco</option>
-            <option value="Dubai">Greece</option>
-            <option value="Dubai">Maasai Mara</option>
-            <option value="Dubai">India</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Greece">Greece</option>
+            <option value="Maasai Mara">Maasai Mara</option>
+            <option value="India">India</option>
         </select>
     </div>
 
@@ -60,10 +60,10 @@
         <label for="Mode of transport">Mode of transport</label>
         <select id="Mode of transport-selection" name="Mode_of_transport" required>
             <option value="">Choose mode of transport</option>
-            <option value="Dubai">Safari Car</option>
-            <option value="Dubai">Self drive</option>
-            <option value="Dubai">Bus</option>
-            <option value="Dubai">Airplane</option>
+            <option value="Safari car">Safari Car</option>
+            <option value="Self drive">Self drive</option>
+            <option value="Bus">Bus</option>
+            <option value="Airplane">Airplane</option>
         </select>
     </div>
        <hr>
