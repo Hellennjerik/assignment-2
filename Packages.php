@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Style.CSS">
 </head>
 <body>
+<?php include_once("Templates/nav.php");?>
     <div class="container">
         <h1>Discover many places with us</h1>
         <!--slideshow-->
