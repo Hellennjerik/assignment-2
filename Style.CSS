@@ -86,6 +86,8 @@ nav{
     margin-bottom: 30px;
     font-weight: 600;
 }
+
+/*booking page*/
 div.elem-group{
     margin: 20px 0;
 }
@@ -122,14 +124,18 @@ label {
   }
   button{
     height: 50px;
-    background: orangered rgba(0,0,0,0.3);
+    background-color: orangered ;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.25em;
     font-family: 'Nanum Gothic';
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  /*end of booking page style*/
+
+  /*feedback page*/
   #Feedback{
     display: flex;
     justify-content: center;
@@ -229,3 +235,244 @@ label {
     color: skyblue;
     background-color: #252525;
 }
+.slideshow-container{
+    max-width: 1000px;
+    position:relative;
+    margin: auto;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/*footer*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+}
+.footer {
+    background: #1e1e1e;
+    color: #ddd;
+    padding: 50px 0;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.box {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #292929;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.box h3:after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ffcc00;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.box a i {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.box a:hover {
+    color: #ffcc00;
+}
+
+.box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.box ul li a {
+    color: #ccc;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.box ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.box-container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Packages Styles Start*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+.container {
+    flex: 1;
+}
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/*Package Styles End*/
+
+/*navigation bar*/
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color:#ddd;
+    color: black;
+}
+.topnav a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
