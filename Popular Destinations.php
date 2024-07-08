@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="column">
             <div class="card">
-                <img src="Images/Image  1.jpeg"width= "70%">
+                <img src="Images/pexels-photo-3629227.webp"width= "70%">
                 <span>
                     <h3>Burj Khalifa,Dubai</h3>
                     <p>Burj khalifa offers a unique blend of breathtaking views ,luxury amenities and the nice architecture. </p>
@@ -89,7 +89,7 @@
 
     </div>
 
-    <?php include_once("Templates/footer.php");?>
+   
 
     
 
