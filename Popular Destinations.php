@@ -7,6 +7,7 @@
     <link rel="stylesheet"href="Style.CSS">
 </head>
 <body>
+<?php include_once("Templates/nav.php");?>
     <div class="container">
         <h2 class="sub-title">Popular Destinations</h2>
         <div class="Popular Destinations">
