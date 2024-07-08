@@ -7,7 +7,7 @@
     <link rel="stylesheet"href="Style.CSS">
 </head>
 <body>
-
+<?php include_once("Templates/nav.php");?>
   
     <form action="" method="post">
         <div class="elem-group">
