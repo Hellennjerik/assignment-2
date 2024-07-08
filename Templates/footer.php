@@ -4,7 +4,7 @@
             <div class="box">
                 <h3>Quick links</h3>
                 <a href="Popular Destinations.php"><i class="fas fa-angle-right"></i>Popular Destinations</a>
-                <a href="Our Services.php"><i class="fas fa-angle-right"></i>Our Services</a>
+                <a href="Transport.php"><i class="fas fa-angle-right"></i>Our Services</a>
                 <a href="Feedback.php"><i class="fas fa-angle-right"></i>Feedback</a>
                 <a href="Booking.php"><i class="fas fa-angle-right"></i>Book</a>
                 <a href="about.php"><i class="fas fa-angle-right"></i>About Us</a>
