@@ -74,7 +74,7 @@
       <button type="submit">Book now </button>
     </form>
 
-    <?php include_once("Templates/footer.php");?>
+    
 
      <?php
      include 'connection.php';
