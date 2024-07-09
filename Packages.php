@@ -92,13 +92,7 @@
 
     
     
-    <!--Footer section-->
-    <div class="footer">
-        <div class="container">
-            <p>&copy; 2024 Mahaba Travels. All rights reserved.</p>
-        </div>
-    </div>
-
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>

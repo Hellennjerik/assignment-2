@@ -1,16 +1,56 @@
+<?php
+include 'connection.php';
+
+$action = $_GET['action'] ?? '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($action == "update") {
+        $booking_id = $_POST['booking_id'];
+        $person = $_POST['people'];
+        $time = $_POST['time'];
+        $phone = $_POST['phone'];
+        $date = $_POST['date'];
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+
+        $stmt = $conn->prepare("UPDATE  travelers  SET travelersname=?, email=?, phonenumber=?, adults=?, children=?, checkin=?, checkout=?, destination=?, modeoftransport=?, anythingelse=? WHERE id=?");
+        $stmt->bind_param("ssiiisssss",$Travelersname,$Travelersemail,$Travelersphone,$Adults,$Children, $Checkin,$Checkout,$destination,$Transport,$Travelersmessage,$booking_id);
+        $stmt->execute();
+        echo "Booking updated!";
+        $stmt->close();
+
+    } elseif ($action == "delete") {
+        $booking_id = $_POST['booking_id'] ?? null;
+
+        $stmt = $conn->prepare("DELETE FROM travelers WHERE id=?");
+        $stmt->bind_param("i", $booking_id);
+        $stmt->execute();
+        echo "Booking deleted!";
+        $stmt->close();
+    }
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet"href="Style.CSS">
+    <title>Manage Reservation</title>
+
+     <!--Custom css file link-->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  
 </head>
 <body>
-<?php include_once("Templates/nav.php");?>
-
-  
-    <form action="" method="post">
+<div class="booking" id="booking">
+    <div class="image"></div>
+    <div class="form">
+        <?php if ($action == "update") { ?>
+            <h2>Update Booking</h2>
+            <form action="" method="post">
         <div class="elem-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="Travelers_Name" placeholder="Name">
@@ -74,40 +114,16 @@
       </div>
       <button type="submit">Book now </button>
     </form>
-
-    <a href="manage_booking.php?action=update"class="btn">Update Booking</a>
-    <a href="manage_booking.php?action=delete"class="btn">Delete Booking</a>
-    <?php include_once("Templates/footer.php");?>
-     <?php
-     include 'connection.php';
-     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-      
-        $Travelersname = $_POST["Travelers_Name"];
-        $Travelersemail = $_POST["Travelers-email"];
-        $Travelersphone= $_POST["Travelers-phone"];
-        $Adults = $_POST["adults"];
-        $Children = $_POST["children"];
-        $Checkin = $_POST["checkin"];
-        $Checkout = $_POST["checkout"];
-        $destination = $_POST["destination"];
-        $Transport = $_POST["Mode_of_transport"];
-        $Travelersmessage = $_POST["Travelers_message"];
-
-      }
-
-      $stmt = $conn->prepare("INSERT INTO travelers (travelersname, email, phonenumber, adults, children, checkin, checkout, destination, modeoftransport, anythingelse)
-      VALUES (?,?,?,?,?,?,?,?,?,?)");
-      $stmt->bind_param("ssiiisssss",$Travelersname,$Travelersemail,$Travelersphone,$Adults,$Children, $Checkin,$Checkout,$destination,$Transport,$Travelersmessage);
-      $stmt->execute();
-      echo "Booked successfully";
-      $stmt->close();
-
-      $conn->close();
-     
-     ?>
-
-
-
-
+        <?php } elseif ($action == "delete") { ?>
+            <h2>Delete  Booking</h2>
+            <form action="" method="post">
+                <input type="text" name="booking_id" placeholder="Booking ID">
+                <center><button type="submit" class="btn">Delete</button></center>
+            </form>
+        <?php } else { ?>
+            <h2>Invalid Action</h2>
+        <?php } ?>
+    </div>
+</div>
 </body>
 </html>
