@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
-   
 }
 .header{
     min-height: 100vh;
@@ -38,6 +37,7 @@ nav{
 }
 .container{
     padding:0 7%;
+    flex: 1;
 }
 .header h1{
     font-size: 5vw;
@@ -126,12 +126,13 @@ label {
   }
   button{
     height: 50px;
+    width: 250px;
     background-color: orangered ;
     border: none;
     color: black;
     font-size: 1.25em;
     font-family: 'Nanum Gothic';
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -312,6 +313,9 @@ body {
     min-height: 100vh;
 }
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background: #1e1e1e;
     color: #ddd;
     padding: 50px 0;
@@ -397,7 +401,7 @@ body {
 .box-container:after {
     content: '';
     display: table;
-    clear: both;
+  
 }
 /*end of footer*/
 
@@ -452,7 +456,7 @@ th {
 }
 .topnav a{
     float: left;
-    color: #f2f2f2;
+    color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -467,8 +471,9 @@ th {
     background-color: black;
     color: white;
 }
-.Book-btn{
+.topnav.Book-btn{
     background-color: black;
+    
 }
 /*navigation bar ends here*/
 
